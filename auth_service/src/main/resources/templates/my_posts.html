@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My posts</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    b {
+        color: #555;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    </style>
+</head>
+<body>
+<h1>My posts</h1>
+
+<!-- Кнопка для открытия модального окна -->
+<button id="openModalBtn" style="padding:10px 20px; background:#007bff; color:#fff; border:none; border-radius:5px; cursor:pointer; margin-bottom:20px;">
+    Создать пост
+</button>
+
+<!-- Модальное окно -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000; align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:30px 20px 20px 20px; border-radius:10px; min-width:300px; max-width:90vw; position:relative;">
+        <button id="closeModalBtn" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:20px; cursor:pointer;">&times;</button>
+        <form action="/add_post" method="post">
+            <label>
+                Title:<br>
+                <input type="text" name="title" required style="width:100%; margin-bottom:10px;">
+            </label><br>
+            <label>
+                Content:<br>
+                <textarea name="content" required style="width:100%; height:80px; margin-bottom:10px;"></textarea>
+            </label><br>
+            <button type="submit" style="padding:8px 20px; background:#007bff; color:#fff; border:none; border-radius:5px; cursor:pointer;">Add Post</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Открытие модального окна
+    document.getElementById('openModalBtn').onclick = function() {
+        document.getElementById('modal').style.display = 'flex';
+    };
+    // Закрытие модального окна
+    document.getElementById('closeModalBtn').onclick = function() {
+        document.getElementById('modal').style.display = 'none';
+    };
+    // Закрытие по клику вне формы
+    document.getElementById('modal').onclick = function(e) {
+        if (e.target === this) this.style.display = 'none';
+    };
+</script>
+
+<div th:if="${posts.isEmpty()}">
+    <p>No posts found</p>
+</div>
+<ul th:unless="${posts.isEmpty()}">
+    <li th:each="post : ${posts}">
+        <b th:text="${post.title}"></b>
+        <b>-</b>
+        <span th:text="${post.content}"></span>
+
+    </li>
+</ul>
+<p><a href="/my_profile">Back to Profile</a> | <a href="/users">Back to Users</a></p>
+</body>
+</html>

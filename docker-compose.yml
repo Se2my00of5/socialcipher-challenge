@@ -1,0 +1,20 @@
+
+services:
+  auth-service:
+    build: ./auth_service
+    ports:
+      - "5000:5000"
+    environment:
+      ADMIN_SERVICE_URL: "http://admin-service:5001" # Внутренний адрес в сети Docker
+    volumes:
+      - ./admin_auth_data.db:/app/admin_auth_data.db
+    depends_on:
+      - admin-service
+
+  admin-service:
+    build: ./admin_service
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./admin_auth_data.db:/app/admin_auth_data.db
+      - ./flags.txt:/app/flags.txt:ro

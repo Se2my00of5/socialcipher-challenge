@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <style>body{font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 20px;} h1{color: #333;} pre{background-color: #eee; padding: 15px; border-radius: 8px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;} a{color: #007bff; text-decoration: none;} a:hover{text-decoration: underline;}</style>
+</head>
+<body>
+<h1>User Profile - <span th:text="${username}"></span></h1>
+<p><a th:href="@{/my_posts}">View Posts</a></p>
+<p><a href="/">Back to Main</a></p>
+</body>
+</html>

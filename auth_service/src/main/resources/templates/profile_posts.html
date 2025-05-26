@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts by User ID: <span th:text="${userId}"></span></title>
+    <style>body{font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 20px;} h1{color: #333;} ul{list-style: none; padding: 0;} li{margin-bottom: 10px; background-color: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.05);} b{color: #555;} a{color: #007bff; text-decoration: none;} a:hover{text-decoration: underline;}</style>
+</head>
+<body>
+<h1>Posts by User ID: <span th:text="${userId}"></span></h1>
+<div th:if="${posts.isEmpty()}">
+    <p>No posts found for this user.</p>
+</div>
+<ul th:unless="${posts.isEmpty()}">
+    <li th:each="post : ${posts}">
+        <b th:text="${post.title}"></b>
+        <b>-</b>
+        <span th:text="${post.content}"></span>
+
+    </li>
+</ul>
+<p><a th:href="@{/user/{id}(id=${userId})}">Back to Profile</a> | <a href="/users">Back to Users</a></p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>body{font-family: Arial, sans-serif; background-color: #f8d7da; color: #721c24; margin: 20px;} h1{color: #721c24;} p{background-color: #f5c6cb; padding: 15px; border-radius: 8px; border: 1px solid #f5c6cb;} a{color: #007bff; text-decoration: none;} a:hover{text-decoration: underline;}</style>
+</head>
+<body>
+<h1>Error</h1>
+<p th:text="${error}">An unexpected error occurred.</p>
+<p><a href="/">Back to Home</a></p>
+</body>
+</html>

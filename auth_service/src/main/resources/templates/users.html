@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialCipher - All Users</title>
+    <style>body{font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 20px;} h1{color: #333;} ul{list-style: none; padding: 0;} li{margin-bottom: 10px; background-color: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.05);} a{color: #007bff; text-decoration: none;} a:hover{text-decoration: underline;}</style>
+</head>
+<body>
+<h1>All Users</h1>
+<ul>
+    <li th:each="user : ${users}">
+        <a th:href="@{/user/{id}(id=${user.id})}" th:text="${user.username} + ' (ID: ' + ${user.id} + ')'">User (ID)</a>
+    </li>
+</ul>
+<p><a href="/">Back to Home</a></p>
+</body>
+</html>

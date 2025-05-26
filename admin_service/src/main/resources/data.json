@@ -1,0 +1,169 @@
+{
+  "users": [
+    { "username": "ShadowHunter", "password": "hunterX2024", "role": "USER" },
+    { "username": "PixelMage", "password": "magicPixel", "role": "USER" },
+    { "username": "IronWolf", "password": "wolfpack", "role": "USER" },
+    { "username": "NovaBlade", "password": "starblade", "role": "USER" },
+    { "username": "FrostByte", "password": "icycode", "role": "USER" },
+    { "username": "ALLHitAdmin", "password": "qwertahahaha", "role": "ADMIN" },
+    { "username": "CrimsonViper", "password": "venomous", "role": "USER" },
+    { "username": "LunaSpectre", "password": "moonlight", "role": "USER" },
+    { "username": "BlazeRider", "password": "firestorm", "role": "USER" },
+    { "username": "CryptoStrategy", "password": "qwertahahaha1", "role": "ADMIN" },
+    { "username": "EchoSniper", "password": "silentshot", "role": "USER" },
+    { "username": "CyberSamurai", "password": "katana2024", "role": "USER" }
+  ],
+  "posts": [
+    {
+      "userUsername": "ShadowHunter",
+      "title": "Stealth Tactics 101",
+      "content": "Master the art of moving unseen and striking from the shadows."
+    },
+    {
+      "userUsername": "ShadowHunter",
+      "title": "Night Raid Highlights",
+      "content": "Last night's raid was a success! Loot and XP for everyone."
+    },
+    {
+      "userUsername": "PixelMage",
+      "title": "Top 5 Spells for PvP",
+      "content": "These spells will give you the edge in any duel."
+    },
+    {
+      "userUsername": "PixelMage",
+      "title": "Mana Management Tips",
+      "content": "Never run out of mana again with these simple tricks."
+    },
+    {
+      "userUsername": "IronWolf",
+      "title": "Wolf Pack Strategies",
+      "content": "How to coordinate attacks with your team for maximum impact."
+    },
+    {
+      "userUsername": "IronWolf",
+      "title": "Armor Upgrades Explained",
+      "content": "A guide to the best armor sets for tanking damage."
+    },
+    {
+      "userUsername": "NovaBlade",
+      "title": "Starblade Build Guide",
+      "content": "Optimize your NovaBlade for both offense and defense."
+    },
+    {
+      "userUsername": "NovaBlade",
+      "title": "Galactic Arena Recap",
+      "content": "Highlights from the latest intergalactic tournament."
+    },
+    {
+      "userUsername": "FrostByte",
+      "title": "Freezing Your Foes",
+      "content": "How to use ice abilities to control the battlefield."
+    },
+    {
+      "userUsername": "FrostByte",
+      "title": "Best Winter Maps",
+      "content": "My favorite maps for chilling victories."
+    },
+    {
+      "userUsername": "CrimsonViper",
+      "title": "Venomous Combos",
+      "content": "Chain your attacks for deadly results. \nvenom, venom, venom"
+    },
+    {
+      "userUsername": "CrimsonViper",
+      "title": "Surviving Poison Zones",
+      "content": "Tips for staying alive in toxic environments."
+    },
+    {
+      "userUsername": "LunaSpectre",
+      "title": "Ghost Walk Guide",
+      "content": "Become invisible and outmaneuver your enemies."
+    },
+    {
+      "userUsername": "LunaSpectre",
+      "title": "Lunar Event Rewards",
+      "content": "What you can earn during the full moon event."
+    },
+    {
+      "userUsername": "BlazeRider",
+      "title": "Racing Through Firelands",
+      "content": "Fastest routes and shortcuts for the Firelands map."
+    },
+    {
+      "userUsername": "BlazeRider",
+      "title": "Mount Collection Tips",
+      "content": "How to collect rare mounts and show them off."
+    },
+    {
+      "userUsername": "EchoSniper",
+      "title": "Silent Sniping",
+      "content": "How to take out targets without being detected."
+    },
+    {
+      "userUsername": "EchoSniper",
+      "title": "Best Sniper Rifles Ranked",
+      "content": "My personal ranking of the top sniper rifles in the game."
+    },
+    {
+      "userUsername": "CyberSamurai",
+      "title": "Katana Mastery",
+      "content": "Sharpen your skills and become a true cyber samurai."
+    },
+    {
+      "userUsername": "CyberSamurai",
+      "title": "Deflecting Projectiles",
+      "content": "Learn how to deflect enemy attacks with precision."
+    },
+    {
+      "userUsername": "CryptoStrategy",
+      "title": "Top 3 Earning Tactics in GameFi",
+      "content": "Discover the best strategies to maximize your in-game crypto earnings this season."
+    },
+    {
+      "userUsername": "CryptoStrategy",
+      "title": "NFT Trading: Risk or Reward?",
+      "content": "A deep dive into the world of NFT trading and how to avoid common pitfalls."
+    },
+    {
+      "userUsername": "CryptoStrategy",
+      "title": "Daily Quest Optimization",
+      "content": "How to complete your daily quests faster and earn more tokens."
+    },
+    {
+      "userUsername": "CryptoStrategy",
+      "title": "Guild Treasury Management",
+      "content": "Tips for managing your guild’s crypto treasury and keeping everyone happy."
+    },
+    {
+      "userUsername": "CryptoStrategy",
+      "title": "Security Tips for Gamers",
+      "content": "Protect your wallet and your account from hackers with these essential tips."
+    },
+
+    {
+      "userUsername": "ALLHitAdmin",
+      "title": "Server Event Recap: All Hits Weekend",
+      "content": "A summary of the most epic moments from our latest all-hits event."
+    },
+    {
+      "userUsername": "ALLHitAdmin",
+      "title": "How We Handle Cheaters",
+      "content": "An inside look at our anti-cheat system and recent ban waves."
+    },
+    {
+      "userUsername": "ALLHitAdmin",
+      "title": "Patch Notes: My secret",
+      "content": "My secret is "
+    },
+    {
+      "userUsername": "ALLHitAdmin",
+      "title": "Meet the Moderators",
+      "content": "Get to know the team that keeps the game fair and fun for everyone."
+    },
+    {
+      "userUsername": "ALLHitAdmin",
+      "title": "Admin AMA Highlights",
+      "content": "The best questions and answers from our recent Ask Me Anything session."
+    }
+  ]
+}
